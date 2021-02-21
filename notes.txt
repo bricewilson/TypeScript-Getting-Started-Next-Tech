@@ -27,3 +27,11 @@ mkdir -p /home/nt-user/workspace/Finish/node_modules/
 tar -xzf /tmp/node_modules.tgz --directory /home/nt-user/workspace/Start/ --strip-components=1
 tar -xzf /tmp/node_modules.tgz --directory /home/nt-user/workspace/Finish/ --strip-components=1
 rm -f /tmp/node_modules.tgz
+
+8. Add a new "Instructions" item. Choose "New Block" with the type "Markdown". Paste in the contents of the "instructions.md" file.
+
+9. Open a "Web Browser" beside the default terminal.
+
+10. Close all open files.
+
+11. Save the new content item.
