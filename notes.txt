@@ -8,16 +8,18 @@ Steps to create new "content" for TypeScript: Getting Started lab:
 
 2. Delete "node_modules" from the "Start" and "Finish" folders.
 
-3. Create a new "Content" item.
+3. Compress the "Start" and "Finish" folders and "index.html" into a file named "files.zip".
 
-4. Upload (choose extract and delete) the latest "files.zip" file.
+4. Create a new "Content" item.
 
-5. Add the following lines to the "Excluded Files" section in the content "Settings" pane:
+5. Upload (choose extract and delete) the latest "files.zip" file.
+
+6. Add the following lines to the "Excluded Files" section in the content "Settings" pane:
 
 Start/node_modules
 Finish/node_modules
 
-6. Add the following as a "Startup Script" on the content "Settings" pane:
+7. Add the following as a "Startup Script" on the content "Settings" pane:
 
 wget -q -O /tmp/node_modules.tgz https://github.com/bricewilson/TypeScript-Getting-Started-Next-Tech/raw/main/node_modules.tgz
 mkdir -p /home/nt-user/workspace/Start/node_modules/
