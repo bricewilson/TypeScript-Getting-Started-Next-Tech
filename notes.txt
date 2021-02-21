@@ -1,8 +1,27 @@
-Be sure to add the following lines to the "Excluded Files" section in the content settings:
+Steps to create new "content" for TypeScript: Getting Started lab:
+------------------------------------------------------------------
+
+1. Create a new compressed version of "node_modules" with the following commands:
+
+   cd Start
+   tar -czvf ../node_modules.tgz ./node_modules
+
+2. Delete "node_modules" from the "Start" and "Finish" folders.
+
+3. Create a new "Content" item.
+
+4. Upload (choose extract and delete) the latest "files.zip" file.
+
+5. Add the following lines to the "Excluded Files" section in the content "Settings" pane:
 
 Start/node_modules
 Finish/node_modules
 
-Command to compress node_modules:
+6. Add the following as a "Startup Script" on the content "Settings" pane:
 
-tar -czvf node_modules.tgz ./Start/node_modules
+wget -q -O /tmp/node_modules.tgz https://github.com/bricewilson/TypeScript-Getting-Started-Next-Tech/raw/main/node_modules.tgz
+mkdir -p /home/nt-user/workspace/Start/node_modules/
+mkdir -p /home/nt-user/workspace/Finish/node_modules/
+tar -xzf /tmp/node_modules.tgz --directory /home/nt-user/workspace/Start/ --strip-components=1
+tar -xzf /tmp/node_modules.tgz --directory /home/nt-user/workspace/Finish/ --strip-components=1
+rm -f /tmp/node_modules.tgz
