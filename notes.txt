@@ -1,0 +1,8 @@
+Be sure to add the following lines to the "Excluded Files" section in the content settings:
+
+Start/node_modules
+Finish/node_modules
+
+Command to compress node_modules:
+
+tar -czvf node_modules.tgz ./Start/node_modules
