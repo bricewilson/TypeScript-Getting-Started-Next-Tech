@@ -8,18 +8,22 @@ Steps to create new "content" for TypeScript: Getting Started lab:
 
 2. Delete "node_modules" from the "Start" and "Finish" folders.
 
-3. Compress the "Start" and "Finish" folders and "index.html" into a file named "files.zip".
+3. Use "index.html" file inside "Start" and "Finish" that has the correct script tag to work with Next.Tech.
 
-4. Create a new "Content" item.
+4. Use a "package.json" file inside "Start" and "Finish" that has the correct npm start script.
 
-5. Upload (choose extract and delete) the latest "files.zip" file.
+5. Compress the "Start" and "Finish" folders and "index.html" into a file named "files.zip".
 
-6. Add the following lines to the "Excluded Files" section in the content "Settings" pane:
+6. Create a new "Content" item.
+
+7. Upload (choose extract and delete) the latest "files.zip" file.
+
+8. Add the following lines to the "Excluded Files" section in the content "Settings" pane:
 
 Start/node_modules
 Finish/node_modules
 
-7. Add the following as a "Startup Script" on the content "Settings" pane:
+9. Add the following as a "Startup Script" on the content "Settings" pane:
 
 wget -q -O /tmp/node_modules.tgz https://github.com/bricewilson/TypeScript-Getting-Started-Next-Tech/raw/main/node_modules.tgz
 mkdir -p /home/nt-user/workspace/Start/node_modules/
@@ -28,10 +32,10 @@ tar -xzf /tmp/node_modules.tgz --directory /home/nt-user/workspace/Start/ --stri
 tar -xzf /tmp/node_modules.tgz --directory /home/nt-user/workspace/Finish/ --strip-components=1
 rm -f /tmp/node_modules.tgz
 
-8. Add a new "Instructions" item. Choose "New Block" with the type "Markdown". Paste in the contents of the "instructions.md" file.
+10. Add a new "Instructions" item. Choose "New Block" with the type "Markdown". Paste in the contents of the "instructions.md" file.
 
-9. Open a "Web Browser" beside the default terminal.
+11. Open a "Web Browser" beside the default terminal.
 
-10. Close all open files.
+12. Close all open files.
 
-11. Save the new content item.
+13. Save the new content item.
