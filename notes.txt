@@ -12,9 +12,9 @@ Steps to create new "content" for TypeScript: Getting Started lab:
 
 4. Use a "package.json" file inside "Start" and "Finish" that has the correct npm start script.
 
-5. Compress the "Start" and "Finish" folders and "index.html" into a file named "files.zip".
+5. Compress the "Start" and "Finish" folders and "index.html" and "instructions.md" into a file named "files.zip".
 
-6. Create a new "Content" item.
+6. Create a new "Content" item. Choose the Node.js stack. Make the type "Challenge".
 
 7. Upload (choose extract and delete) the latest "files.zip" file.
 
@@ -32,7 +32,7 @@ tar -xzf /tmp/node_modules.tgz --directory /home/nt-user/workspace/Start/ --stri
 tar -xzf /tmp/node_modules.tgz --directory /home/nt-user/workspace/Finish/ --strip-components=1
 rm -f /tmp/node_modules.tgz
 
-10. Add a new "Instructions" item. Choose "New Block" with the type "Markdown". Paste in the contents of the "instructions.md" file.
+10. Add a new "Instructions" item with the title "Working with the lab files". Choose "New Block" with the type "Markdown". Paste in the contents of the "instructions.md" file.
 
 11. Open a "Web Browser" beside the default terminal.
 

@@ -14,6 +14,8 @@ The contents of the "package.json" file and the "webpack.config.js" files are sl
 
 5. To start the TypeScript compiler directly in the terminal (without Webpack), run the following commands in the terminal:
 
-  cd ~/workspace/Start
-  npm install typescript
-  ~/workspace/Start/node_modules/typescript/bin/tsc
+  `cd ~/workspace/Start`
+
+  `npm install typescript`
+
+  `~/workspace/Start/node_modules/typescript/bin/tsc`
