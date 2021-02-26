@@ -11,3 +11,9 @@ The contents of the "package.json" file and the "webpack.config.js" files are sl
 3. Switch to a web browser tab inside the lab environment.
 
 4. The browser will initially show you the "index.html" file at the root of the lab environment. Click the link on that page to visit the app in either the "Start" or "Finish" folders.
+
+5. To start the TypeScript compiler directly in the terminal (without Webpack), run the following commands in the terminal:
+
+  cd ~/workspace/Start
+  npm install typescript
+  ~/workspace/Start/node_modules/typescript/bin/tsc
